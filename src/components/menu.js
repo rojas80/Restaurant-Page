@@ -28,9 +28,9 @@ function createItemMenu(menuItemName, itemDescription){
     dishDescription.textContent = itemDescription;
 
     let tempName = menuItemName.replace(/\s/g,'').toLowerCase();
-    console.log(tempName, menuItemName);
+
     const dishImage = document.createElement('img');
-    dishImage.src = `../src/img/${tempName}.png`;
+    dishImage.src = require(`/src/img/${tempName}.png`);
     dishImage.alt = `${menuItemName}`;
 
     menuItemContainer.appendChild(dishImage);
@@ -43,6 +43,8 @@ function createItemMenu(menuItemName, itemDescription){
 function menuPage(){
     const mainBody = document.querySelector('.body-container');
     mainBody.textContent = '';
+
+
     mainBody.appendChild(createMenu());
     return mainBody;
 }

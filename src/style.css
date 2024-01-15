@@ -9,6 +9,11 @@
     text-align: center;
     color:white;
     padding: 2%;
+    height: 100%;
+}
+.header-ResName{
+    font-family: 'Tangerine', cursive;
+    font-size: 3rem;
 }
 .restaurant-name{
     font-family: 'Tangerine', cursive;
@@ -27,6 +32,7 @@
 /* body */
 .body-container{
     background-color:#303841 ;
+    height: 100%;
 
 }
 .navBtn{
@@ -34,7 +40,6 @@
     font-size: 1rem;
     padding: 15px;
     background-color: transparent;
-    border-bottom: 2px solid transparent;
     color: white;
 
     transition: transform 0.3s;
@@ -51,6 +56,29 @@
     object-fit: cover;
     
 }
+/* menu */
+img{
+    width: 500px;
+}
+.menu{
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3%;
+    height: 1000px;
+    padding: 4%;
+}
+/*contact */
+.info-container{
+    text-align: center;
+    color: white;
+    height: 60vh;
+    padding-top: 10%;
+}
+.hour-item{
+    padding:1% ;
+}
 
 /* header */
 .footer-container{
@@ -58,4 +86,13 @@
     background: linear-gradient(to bottom, #121519 , #47555e);
     text-align: center;
     color: white;
+}
+
+
+button{
+    cursor: pointer;
+    border-style: none;
+}
+button:hover{
+    border-bottom: 1px solid white;
 }

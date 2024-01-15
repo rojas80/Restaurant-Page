@@ -6,7 +6,12 @@ function createHeader(){
     //creates html element
     const header = document.createElement('header');
     //add class attribute to to the element
+    const restaurantName =  document.createElement('h1');
+    restaurantName.classList.add('header-ResName');
+    restaurantName.textContent = 'Tagline Restaurant';
+
     header.classList.add('header');
+    header.appendChild(restaurantName);
     header.appendChild(createNavTaps());
 
     return header;
@@ -91,7 +96,7 @@ function initializeWebPage(){
     content.appendChild(createHeader());
     content.appendChild(createBody());
     content.appendChild(createFooter());
-    selectActiveBtn(document.querySelector('#navHomeBtn'));
+    //selectActiveBtn(document.querySelectorAll('navBtn'));
     homePage();
 }
 export default initializeWebPage;

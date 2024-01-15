@@ -20,10 +20,9 @@ function createHomePage(){
 }
 
 function homePage(){
-    console.log("HomePage");
+
     const bodyContainer = document.querySelector(".body-container");
     bodyContainer.textContent ='';
-
     bodyContainer.appendChild(createHomePage());
 
     return bodyContainer;
