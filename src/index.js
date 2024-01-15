@@ -1,3 +1,6 @@
 import '../src/style.css';
+import initializeWebPage from './loadPage';
 
-console.log("We are ready to start");
+initializeWebPage();
+
+

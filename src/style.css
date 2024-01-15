@@ -1,3 +1,61 @@
-body{
-    background: lightblue;
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* header   rgb(192, 192, 192)*/
+.header{
+    background: linear-gradient(to bottom, #47555e , #121519);
+    text-align: center;
+    color:white;
+    padding: 2%;
+}
+.restaurant-name{
+    font-family: 'Tangerine', cursive;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+
+}
+
+/* body */
+.body-container{
+    background-color:#303841 ;
+
+}
+.navBtn{
+    width: 100px;
+    font-size: 1rem;
+    padding: 15px;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+    color: white;
+
+    transition: transform 0.3s;
+    margin: 1%;
+}
+
+.logoContainer{
+    text-align: center;
+}
+.resturant-logo-img{
+    height: 80vh;
+    width: 100%;
+    mix-blend-mode: screen;
+    object-fit: cover;
+    
+}
+
+/* header */
+.footer-container{
+    padding: 5%;
+    background: linear-gradient(to bottom, #121519 , #47555e);
+    text-align: center;
+    color: white;
 }
