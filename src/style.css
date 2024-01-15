@@ -96,3 +96,7 @@ button{
 button:hover{
     border-bottom: 1px solid white;
 }
+button.active{
+    text-decoration: underline;
+    border-bottom: 2px solid white;
+}
